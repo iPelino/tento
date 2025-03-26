@@ -1,3 +1,4 @@
+import React from 'react';
 import { RouteObject } from 'react-router-dom';
 
 // Define types for route objects

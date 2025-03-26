@@ -1,6 +1,12 @@
 import { useState } from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, useRoutes } from 'react-router-dom'
 import './App.css'
+import routes from './routes'
+
+// Component to render routes using useRoutes hook
+const AppRoutes: React.FC = () => {
+  return useRoutes(routes);
+};
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,12 +19,7 @@ function App() {
           <p>A comprehensive housing platform connecting tenants, landlords, and brokers</p>
         </header>
         <main>
-          <Routes>
-            <Route path="/" element={<div>Home Page</div>} />
-            <Route path="/dashboard" element={<div>Dashboard</div>} />
-            <Route path="/properties" element={<div>Properties</div>} />
-            <Route path="*" element={<div>Page Not Found</div>} />
-          </Routes>
+          <AppRoutes />
         </main>
         <footer>
           <p>© {new Date().getFullYear()} Tento. All rights reserved.</p>

@@ -130,7 +130,7 @@ Tento is built using modern technologies and follows a microservices architectur
   - Payment processing
   - Matching algorithm for broker recommendations
 
-### Frontend (React Web)
+### Frontend (React with TypeScript & Vite)
 - **User Interfaces**
   - Role-specific dashboards
   - Property listing and search interface
@@ -193,6 +193,9 @@ cd tento
 
 2. Set up the backend
 ```bash
+# Navigate to the backend directory
+cd backend
+
 # Create and activate virtual environment
 python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
@@ -207,11 +210,13 @@ python manage.py migrate
 python manage.py runserver
 ```
 
+**Important**: Always run the Django server from the backend directory, not from the project root.
+
 3. Set up the frontend
 ```bash
 cd frontend
 npm install
-npm start
+npm run dev
 ```
 
 4. Set up the mobile app

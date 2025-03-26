@@ -95,7 +95,6 @@ migrate_working_dir/
 # IDE
 .idea/
 .vscode/
-*.swp
 *.swo
 *~
 .project
@@ -104,11 +103,6 @@ migrate_working_dir/
 *.launch
 .settings/
 *.sublime-workspace
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
 # Docker
 .docker/
@@ -121,7 +115,6 @@ kubeconfig
 .env
 
 # OS specific
-.DS_Store
 .DS_Store?
 ._*
 .Spotlight-V100

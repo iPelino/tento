@@ -63,7 +63,7 @@ Follow the instructions in the [README.md](README.md) to set up your development
 The project is organized as follows:
 
 - `backend/`: Django API server
-- `frontend/`: React web application
+- `frontend/`: React web application with TypeScript and Vite
 - `mobile/`: Flutter mobile application
 - `infrastructure/`: Kubernetes and deployment configurations
 
