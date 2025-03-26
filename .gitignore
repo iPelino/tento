@@ -121,3 +121,6 @@ kubeconfig
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#output
+.output.txt
